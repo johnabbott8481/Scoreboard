@@ -13,6 +13,9 @@
 class Scoreboard : public IScoreboard
 {
   public:
+         Scoreboard();
+         Scoreboard(int players, int rounds);
+         ~Scoreboard();
   	/*
   	 * void setScore(int,int,int)
   	 *  Sets the score for one competitor for a given period. Out of range
@@ -40,6 +43,11 @@ class Scoreboard : public IScoreboard
   	 *  every period
   	 */
 	void clearScoreboard();
+        private:
+          double* m_score;
+          double m_players
+          double m_rounds;
+
 
 };
 #endif /* SCOREBOARD_H_ */
