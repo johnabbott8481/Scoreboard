@@ -36,7 +36,7 @@ int getScore(int competitor, int period)
 int getTotalScore(int competitor)
 {
     m_scores[competitor] += score[competitor];
-    return totalScore[competitor
+    return totalScore[competitor]
 }
 
 void clearScoreboard()
