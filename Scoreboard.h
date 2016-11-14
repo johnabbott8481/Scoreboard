@@ -14,16 +14,10 @@ class Scoreboard : public IScoreboard
 {
 
   public:
-<<<<<<< HEAD
          Scoreboard();
          Scoreboard(int players, int rounds);
          ~Scoreboard();
-=======
-    Scoreboard();
-    Scoreboard(int players, int periods);
-    ~Scoreboard();
 
->>>>>>> e825bdb79b270d01a798325a4a41907fd1d8e3ef
   	/*
   	 * void setScore(int,int,int)
   	 *  Sets the score for one competitor for a given period. Out of range
@@ -50,16 +44,13 @@ class Scoreboard : public IScoreboard
   	 *  Resets a scoreboard to have scores of 0 for every competitor in
   	 *  every period
   	 */
-<<<<<<< HEAD
 	void clearScoreboard();
         private:
           double* m_score;
-          double m_players
+          double m_players;
           double m_rounds;
 
-=======
 	  void clearScoreboard();
->>>>>>> e825bdb79b270d01a798325a4a41907fd1d8e3ef
 
   private:
     double * m_scores;
